@@ -1,113 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <title>AII</title>
 
-  </head>
-  <body>
-    <div class="background"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <title>AII</title>
 
-    <div class="main-container">
-      <div class="leftbar">
-        <div class="menu">
-          <div class="logo">
-            <a href="./index.html"><img src="./public/images/logo.svg" alt="" /></a>
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li><a href="./index.html">Прогнозы</a></li>
-              <li><a href="#">Категории</a></li>
-            </ul>
-          </nav>
+  <script src="./js/ui.js"></script>
+
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <div class="main-container">
+    <div class="leftbar">
+      <div class="menu">
+        <div class="logo">
+          <a href="./index.html"><img src="./public/images/logo.svg" alt="logo" /></a>
         </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="./index.html">Прогнозы</a></li>
+            <li><a href="#">Категории</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="rightbar">
-        <div class="content">
+    </div>
+    <div class="rightbar">
+      <div class="content">
 
-          <div class="content__header">
-            <div class="disipline-icon">
-              <img src="./public/images/football.svg" alt="football-icon">
-            </div>
-            <div class="content__header__title">
-              <div class="discipline-title">Футбол</div>
-              <div class="match-descr">Россия: Высшая лига</div>
-            </div>
+        <div class="content__header">
+          <div class="disipline-icon">
+            <img src="./public/images/football.svg" alt="football-icon">
           </div>
-
-          <div class="match">
-            <div class="team-1-logo">
-              <img src="./public/images/team-1-logo.png" alt="team-1-logo">
-            </div>
-            <div class="team-1-name">Спартак</div>
-            <div class="img-vs">
-              <img src="./public/images/vs-img.png" alt="">
-            </div>
-            <div class="team-2-name">Крылья Совета</div>
-            <div class="team-2-logo">
-              <img src="./public/images/team-2-logo.png" alt="team-2-logo">
-            </div>
+          <div class="content__header__title">
+            <div class="discipline-title">Футбол</div>
+            <div class="match-descr">Россия: Высшая лига</div>
           </div>
-
-          <div class="match-info">
-            <div class="start-time">
-              НАЧАЛО:
-              <div class="date">12.02.13</div>
-              <div class="time">19:00 UTC+3</div>
-            </div>
-            
-            <div class="time-left">
-              До матча осталось <span>12</span> мин
-            </div>
-          </div>
-
-          <div class="all-bets">
-            <div class="bet">
-              <div class="row-1">
-                <div class="bet__variant">
-                  Ставка:
-                  <a class="variant" href="#">Обе команды забьют</a>
-                  КФ:
-                  <a class="ratio" href="#">1.5</a>
-                </div>
-                <div class="bet__variant">
-                  Ставка:
-                  <a class="variant" href="#">Обе команды забьют</a>
-                  КФ:
-                  <a class="ratio" href="#">1.5</a>
-                </div>
-                <img class="arrow" src="./public/images/arrow.svg" alt="arrow">
-              </div>
-              <div class="bet__text-generation">
-                <span class="pre-info">На основе имеющихся данных, моя рекомендация на ставку в будущем матче Спартак - Крылья Советов будет следующей:</span>
-                <div class="text">
-                  <span>Маленький риск:</span> Победа Real Madrid (1.50) или Обе забьют: Да (1.80)
-                  
-                  Real Madrid имеет домашнее преимущество и показывает хорошую форму в последних матчах. Они также победили Villarreal в
-                  их последнем противостоянии в Кубке Испании. Обе команды способны забить голы, поэтому ставка на "Обе забьют" также
-                  может быть рассмотрена для маленького риска.
-                  
-                  <span>Средний риск:</span> Тотал 2.5 Больше (1.67)
-                  
-                  Real Madrid в последнее время забивает много голов, а Villarreal тоже способен забивать. Это может привести к более
-                  высокому счету в этой игре, чем в предыдущих матчах. Также, исходя из статистики, более чем в половине матчей Real
-                  Madrid происходит более чем 2.5 гола.
-                  
-                  <span>Высокий риск:</span> Тотал 3.5 Больше (2.63)
-                  
-                  Ставка на "Тотал 3.5 Больше" является более рискованной, но если вы ищете большую прибыль, то это может быть хорошим
-                  выбором. Это означает, что должно быть не менее 4 голов в этой игре, что может быть трудно, но учитывая то, что обе
-                  команды способны забивать, это также может быть возможным. Однако, это не самая безопасная ставка, поскольку результат
-                  игры может быть совсем другим.
-                </div>
-              </div>
-            </div>
-
-          </div>
-          
         </div>
-  </body>
+
+        <div class="match">
+          <div class="team-1-logo">
+            <img src="./public/images/team-1-logo.png" alt="team-1-logo">
+          </div>
+          <div class="team-1-name">Спартак</div>
+          <div class="img-vs">
+            <img src="./public/images/vs-img.png" alt="">
+          </div>
+          <div class="team-2-name">Крылья Совета</div>
+          <div class="team-2-logo">
+            <img src="./public/images/team-2-logo.png" alt="team-2-logo">
+          </div>
+        </div>
+
+        <div class="match-info">
+          <div class="start-time">
+            НАЧАЛО:
+            <div class="date">12.02.13</div>
+            <div class="time">19:00 UTC+3</div>
+          </div>
+
+          <div class="time-left">
+            До матча осталось <span>12</span> мин
+          </div>
+        </div>
+
+        <div class="all-bets">
+          <div class="bet">
+            <div class="row-1">
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <img class="arrow" src="./public/images/arrow.svg" alt="arrow">
+            </div>
+            <div class="bet__text-generation">
+              <span class="pre-info">На основе имеющихся данных, моя рекомендация на ставку в будущем матче Спартак -
+                Крылья Советов будет следующей:</span>
+              <div class="text">
+                <span>Маленький риск:</span> Победа Real Madrid (1.50) или Обе забьют: Да (1.80)
+
+                Real Madrid имеет домашнее преимущество и показывает хорошую форму в последних матчах. Они также
+                победили Villarreal в
+                их последнем противостоянии в Кубке Испании. Обе команды способны забить голы, поэтому ставка на "Обе
+                забьют" также
+                может быть рассмотрена для маленького риска.
+
+                <span>Средний риск:</span> Тотал 2.5 Больше (1.67)
+
+                Real Madrid в последнее время забивает много голов, а Villarreal тоже способен забивать. Это может
+                привести к более
+                высокому счету в этой игре, чем в предыдущих матчах. Также, исходя из статистики, более чем в половине
+                матчей Real
+                Madrid происходит более чем 2.5 гола.
+
+                <span>Высокий риск:</span> Тотал 3.5 Больше (2.63)
+
+                Ставка на "Тотал 3.5 Больше" является более рискованной, но если вы ищете большую прибыль, то это может
+                быть хорошим
+                выбором. Это означает, что должно быть не менее 4 голов в этой игре, что может быть трудно, но учитывая
+                то, что обе
+                команды способны забивать, это также может быть возможным. Однако, это не самая безопасная ставка,
+                поскольку результат
+                игры может быть совсем другим.
+              </div>
+            </div>
+          </div>
+          <div class="bet">
+            <div class="row-1">
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <img class="arrow" src="./public/images/arrow.svg" alt="arrow">
+            </div>
+            <div class="bet__text-generation">
+              <span class="pre-info">На основе имеющихся данных, моя рекомендация на ставку в будущем матче Спартак -
+                Крылья Советов будет следующей:</span>
+              <div class="text">
+                <span>Маленький риск:</span> Победа Real Madrid (1.50) или Обе забьют: Да (1.80)
+
+                Real Madrid имеет домашнее преимущество и показывает хорошую форму в последних матчах. Они также
+                победили Villarreal в
+                их последнем противостоянии в Кубке Испании. Обе команды способны забить голы, поэтому ставка на "Обе
+                забьют" также
+                может быть рассмотрена для маленького риска.
+
+                <span>Средний риск:</span> Тотал 2.5 Больше (1.67)
+
+                Real Madrid в последнее время забивает много голов, а Villarreal тоже способен забивать. Это может
+                привести к более
+                высокому счету в этой игре, чем в предыдущих матчах. Также, исходя из статистики, более чем в половине
+                матчей Real
+                Madrid происходит более чем 2.5 гола.
+
+                <span>Высокий риск:</span> Тотал 3.5 Больше (2.63)
+
+                Ставка на "Тотал 3.5 Больше" является более рискованной, но если вы ищете большую прибыль, то это может
+                быть хорошим
+                выбором. Это означает, что должно быть не менее 4 голов в этой игре, что может быть трудно, но учитывая
+                то, что обе
+                команды способны забивать, это также может быть возможным. Однако, это не самая безопасная ставка,
+                поскольку результат
+                игры может быть совсем другим.
+              </div>
+            </div>
+          </div>
+          <div class="bet">
+            <div class="row-1">
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <div class="bet__variant">
+                Ставка:
+                <a class="variant" href="#">Обе команды забьют</a>
+                КФ:
+                <a class="ratio" href="#">1.5</a>
+              </div>
+              <img class="arrow" src="./public/images/arrow.svg" alt="arrow">
+            </div>
+            <div class="bet__text-generation">
+              <span class="pre-info">На основе имеющихся данных, моя рекомендация на ставку в будущем матче Спартак -
+                Крылья Советов будет следующей:</span>
+              <div class="text">
+                <span>Маленький риск:</span> Победа Real Madrid (1.50) или Обе забьют: Да (1.80)
+
+                Real Madrid имеет домашнее преимущество и показывает хорошую форму в последних матчах. Они также
+                победили Villarreal в
+                их последнем противостоянии в Кубке Испании. Обе команды способны забить голы, поэтому ставка на "Обе
+                забьют" также
+                может быть рассмотрена для маленького риска.
+
+                <span>Средний риск:</span> Тотал 2.5 Больше (1.67)
+
+                Real Madrid в последнее время забивает много голов, а Villarreal тоже способен забивать. Это может
+                привести к более
+                высокому счету в этой игре, чем в предыдущих матчах. Также, исходя из статистики, более чем в половине
+                матчей Real
+                Madrid происходит более чем 2.5 гола.
+
+                <span>Высокий риск:</span> Тотал 3.5 Больше (2.63)
+
+                Ставка на "Тотал 3.5 Больше" является более рискованной, но если вы ищете большую прибыль, то это может
+                быть хорошим
+                выбором. Это означает, что должно быть не менее 4 голов в этой игре, что может быть трудно, но учитывая
+                то, что обе
+                команды способны забивать, это также может быть возможным. Однако, это не самая безопасная ставка,
+                поскольку результат
+                игры может быть совсем другим.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>
