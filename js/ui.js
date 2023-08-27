@@ -5,6 +5,4 @@ document.addEventListener("DOMContentLoaded", () => {
       e.currentTarget.parentNode.nextElementSibling.classList.toggle("toggle");
     });
   });
-  
-  
 });
